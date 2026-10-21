@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutal University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="" alt="school log"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+
+    </section>
+
+    <!----------------- Contact Us ----------->
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63610.75983701681!2d6.947811363844027!3d4.826181986551581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1signatius%20ajuru%20university%20of%20education%20staff%20quarter!5e0!3m2!1sen!2sng!4v1747780205599!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ Road, ABC Building</h5>
+                            <p>Bangalore, Karnataka</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+1 0123456789</h5>
+                            <p>Monday to saturday, 10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>info@easyturorialspro.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="contact-col">
+                    <form action="formhandler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter Email Address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject">
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+    </section>    
+
+    
+    <!--------------- Footer ----------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et facere repellat eveniet doloremque expedita delectus deleniti impedit natus tempora. <br> bcaecati excepturi inventore maxime nisi laborum minus cupiditate ipsum quas.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Toturials</p>
+    </section>
+    
+
+    <!----------JavaScript for Toggle Menu------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+    
+</body>
+</html>
